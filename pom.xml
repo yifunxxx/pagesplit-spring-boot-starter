@@ -6,7 +6,7 @@
 
     <groupId>cn.xsaf1207</groupId>
     <artifactId>pagesplit-spring-boot-starter</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>pagesplit</name>
     <description>简单注解分页插件适用于mubatis（只支持mysql）</description>

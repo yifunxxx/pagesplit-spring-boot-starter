@@ -1,4 +1,4 @@
-package cn.yifun.utils;
+package cn.xsaf1207.utils;
 
 import org.springframework.util.ObjectUtils;
 

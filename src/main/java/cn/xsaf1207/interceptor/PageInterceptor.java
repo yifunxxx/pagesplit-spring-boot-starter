@@ -1,10 +1,9 @@
-package cn.yifun.interceptor;
+package cn.xsaf1207.interceptor;
 
 
-import cn.yifun.model.Page;
-import cn.yifun.utils.page.MSUtil;
-import cn.yifun.utils.page.PageUtil;
-import lombok.extern.slf4j.Slf4j;
+import cn.xsaf1207.model.Page;
+import cn.xsaf1207.utils.page.MSUtil;
+import cn.xsaf1207.utils.page.PageUtil;
 import org.apache.ibatis.cache.CacheKey;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.mapping.BoundSql;

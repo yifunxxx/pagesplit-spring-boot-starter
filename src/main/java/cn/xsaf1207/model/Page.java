@@ -1,4 +1,4 @@
-package cn.yifun.model;
+package cn.xsaf1207.model;
 
 
 import lombok.Builder;

@@ -1,4 +1,4 @@
-package cn.yifun.constant;
+package cn.xsaf1207.constant;
 
 /**
  * @author yifun

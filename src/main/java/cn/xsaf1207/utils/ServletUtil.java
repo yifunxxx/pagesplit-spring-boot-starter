@@ -1,4 +1,4 @@
-package cn.yifun.utils;
+package cn.xsaf1207.utils;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.context.request.RequestAttributes;
@@ -10,10 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;

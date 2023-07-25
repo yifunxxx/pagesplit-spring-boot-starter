@@ -1,10 +1,10 @@
-package cn.yifun.aspectj;
+package cn.xsaf1207.aspectj;
 
-import cn.yifun.annotation.PageSplit;
-import cn.yifun.constant.PageConstants;
-import cn.yifun.model.Page;
-import cn.yifun.utils.ServletUtil;
-import cn.yifun.utils.page.PageUtil;
+import cn.xsaf1207.annotation.PageSplit;
+import cn.xsaf1207.constant.PageConstants;
+import cn.xsaf1207.model.Page;
+import cn.xsaf1207.utils.ServletUtil;
+import cn.xsaf1207.utils.page.PageUtil;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;

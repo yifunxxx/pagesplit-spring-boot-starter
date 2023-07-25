@@ -1,4 +1,4 @@
-package cn.yifun.utils.page;
+package cn.xsaf1207.utils.page;
 
 import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.mapping.ResultMap;

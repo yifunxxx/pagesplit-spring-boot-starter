@@ -1,7 +1,7 @@
-package cn.yifun.utils.page;
+package cn.xsaf1207.utils.page;
 
-import cn.yifun.model.Page;
-import cn.yifun.utils.TypeConvertUtil;
+import cn.xsaf1207.model.Page;
+import cn.xsaf1207.utils.TypeConvertUtil;
 import org.apache.ibatis.builder.annotation.ProviderSqlSource;
 import org.apache.ibatis.cache.CacheKey;
 import org.apache.ibatis.mapping.BoundSql;

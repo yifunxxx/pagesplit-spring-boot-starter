@@ -1,4 +1,4 @@
-package cn.yifun.annotation;
+package cn.xsaf1207.annotation;
 
 import java.lang.annotation.*;
 

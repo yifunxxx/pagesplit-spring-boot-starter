@@ -14,13 +14,14 @@ import org.springframework.stereotype.Component;
  * @author yifun
  */
 @Aspect
-@Component
 public class PageSplitAspect {
 
     @Around("@annotation(pageSplit)")
     public Object pageSplitExexution(ProceedingJoinPoint joinPoint, PageSplit pageSplit) throws Throwable {
         Integer pageNum = ServletUtil.getParameterToInt(PageConstants.PAGE_NUM, 1);
         Integer pageSize = ServletUtil.getParameterToInt(PageConstants.PAGE_SIZE, 10);
+        pageNum = pageNum < 1 ? 1 : pageNum;
+        pageSize = pageSize < 1 ? 10 : pageSize;
         Page page = Page.builder().pageNum(pageNum).pageSize(pageSize).isPage(Boolean.TRUE).build();
         PageUtil.setLocalPage(page);
         Object result = joinPoint.proceed();

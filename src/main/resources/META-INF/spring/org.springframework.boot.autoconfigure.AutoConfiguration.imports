@@ -1,2 +1,1 @@
-cn.xsaf1207.aspectj.PageSplitAspect
-cn.xsaf1207.interceptor.PageInterceptor
+cn.xsaf1207.config.PageConfig

@@ -54,12 +54,12 @@ public class PageInterceptor implements Interceptor {
       // 获取 count sql
       String countSql = PageUtil.getCountSql(boundSql.getSql(), "0");
       // 构造 BoundSql
-      BoundSql countBoundSql = new BoundSql(ms.getConfiguration(), countSql, new ArrayList<>(), null);
+      BoundSql countBoundSql = new BoundSql(ms.getConfiguration(), countSql, boundSql.getParameterMappings(), parameter);
       //创建 count 查询的缓存 key
-      CacheKey countKey = executor.createCacheKey(ms, null, RowBounds.DEFAULT, countBoundSql);
+      CacheKey countKey = executor.createCacheKey(ms, parameter, RowBounds.DEFAULT, countBoundSql);
       MappedStatement countMs = MSUtil.newCountMappedStatement(ms, "COUNT");
       // 执行 count sql
-      Object countResultList = executor.query(countMs, null, RowBounds.DEFAULT, null, countKey, countBoundSql);
+      Object countResultList = executor.query(countMs, parameter, RowBounds.DEFAULT, null, countKey, countBoundSql);
       int total = ((Number) ((List) countResultList).get(0)).intValue();
       page.setTotal(total);
       if (total == 0) {

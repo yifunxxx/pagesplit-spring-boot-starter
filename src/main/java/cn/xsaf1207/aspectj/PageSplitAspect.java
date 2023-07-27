@@ -22,7 +22,7 @@ public class PageSplitAspect {
         Integer pageSize = ServletUtil.getParameterToInt(PageConstants.PAGE_SIZE, 10);
         pageNum = pageNum < 1 ? 1 : pageNum;
         pageSize = pageSize < 1 ? 10 : pageSize;
-        Page page = Page.builder().pageNum(pageNum).pageSize(pageSize).isPage(Boolean.TRUE).build();
+        Page page = new Page(pageNum, pageSize, Boolean.TRUE);
         PageUtil.setLocalPage(page);
         Object result = joinPoint.proceed();
         PageUtil.clearPage();
